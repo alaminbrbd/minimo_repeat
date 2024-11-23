@@ -1,0 +1,292 @@
+/*common css start*/
+body{
+    margin:0; /* removes default margin from the body */
+    font-family:"Playfair", serif; /* sets font properties for the entire page */
+    font-size: 16px;
+    font-weight: 400;
+    color:#626262; /* grayish text color */
+}
+/*common css end*/
+
+/*header start*/
+header{
+    padding: 30px 0;
+    border-bottom: 1px solid; /* adds a bottom border for visual separation */
+}
+.container{
+    overflow: hidden; /* prevents content overflow */
+    margin: 0 auto;
+    width: 90%;
+    /*border: 1px solid navy;*/
+}
+.logo{
+    margin-top: 10px; /* positions the logo with some margin */
+    float: left;
+    width: 13%;
+    /*border: 1px solid navy;*/
+}
+.logo a{}
+.logo a img{
+    width: 100%; /* makes the logo image responsive */
+}
+.menu{
+    float: right; /* aligns the menu to the right */
+    width: 65%; /* width of the menu section */
+/*border: 1px solid navy;*/
+}
+.menu ul {
+    float: right; /* aligns the menu items horizontally */
+}
+
+.menu ul li{
+    float: left;
+    list-style: none; /* makes each menu item inline and removes bullets */
+    
+}
+.menu ul li a {
+    display: block;
+    margin: 0 50px;
+    color:#626262;    
+    text-decoration: none; /* removes underline */
+    text-transform: uppercase; /* converts text to uppercase */
+    border-bottom: 1px solid transparent; /* hover effect base */
+}
+.menu ul li:last-child a{
+    margin-right: 0; /* removes extra margin from the last menu item */
+}
+.menu ul li a:hover{
+    border-bottom: 1px solid #626262; /* adds underline effect on hover */
+}
+/*header end*/
+/*banner start*/
+.banner{}
+.b_img{
+   
+}
+.b_img img{
+    width: 100%; /* ensures the banner image spans full width */
+}
+
+/*banner end*/
+.perfect{
+    margin:100px 0 100px;
+
+}
+.container2{
+    margin:0 auto;
+    width:80%; /* similar to .container but with 80% width */
+/*border:1px solid red;*/
+overflow: hidden;
+}
+.p_content{
+    
+
+}
+.c_light{
+    /* styles a lighter subtitle or heading */
+    margin:0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+.c_title{
+    margin: 15px 0 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.c_p{
+    margin:0;
+    line-height: 24px;  /*styles paragraph text with line spacing */
+}
+.c_link{
+    /* styles a link/button */
+   margin-top: 40px ;
+   display:block;
+   text-decoration: none;
+   text-transform: uppercase;
+   color:#626262; 
+}
+
+/*blog start*/
+.blog{
+    padding: 60px 0;
+}
+.single{
+    width:47%; /* two blogs in a row */
+    /*border: 1px solid;*/
+    float: left;
+    padding-bottom: 50px;
+    
+}
+.single:nth-child(even){
+    /* adds margin to every second blog */
+    margin-left: 6%;
+    
+}
+.single img{
+    width: 100%; /* ensures blog images are full-width */
+    margin-bottom: 20px;
+}
+.single h1{
+    font-weight: 400;
+    font-size: 30px;
+    margin: 20px 0;
+    
+}
+.single p:last-child{
+    color: #626262;
+    line-height: 1.5;
+}
+/*blog end*/
+/*newsletter start*/
+.newsletter{
+  background-color: #f0f0f0; 
+  padding: 70px 0; 
+}
+.signup{
+text-align: center;  /* centers the content */  
+}
+.s h1{
+    color:#333333 ;
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+.s_form{
+    position: relative;
+    width: 400px;
+    /*border: 2px solid red;*/
+    margin: 0 auto;
+   
+}
+.s_form input{
+    font-family: "Playfair Display";
+    font: size 14px;
+    color:#626262;
+    width: 345px;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #626262;
+    background: transparent;
+    padding-left: 5px;
+    padding-right:45px;
+
+}
+.s_input:focus{ 
+    /* removes default outline on focus */
+    outline: 0;
+}
+.s_form button{
+    position: absolute;
+    background: transparent;
+    border:none;
+    cursor: pointer;
+    top:15px;
+    right:0;
+}
+.s_form button:focus{
+    outline: 0;
+}
+.s_form button img{}
+
+/*newsletter end*/
+/*blog2 start*/
+.blog2{
+    padding: 90px 0;
+}
+/*blog2 end*/
+/*button start*/
+.btn{}
+.container3{
+    text-align: center;
+    height: 300px;
+}
+.container3 button{
+    padding:30px 70px;
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+    border: 1px solid #626262;
+    background:transparent;
+    cursor: pointer;
+    transition:.33s;
+    
+}
+.container3 button:hover{
+    color:white;
+    background-color: #626262;
+    border: 1px solid#ffffff;
+    
+}
+/*button end*/
+
+/*footer start*/
+footer{
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    /*border: 1px solid navy;*/
+}
+.footer-container{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 90%;
+    /*border: 1px solid red;*/
+    
+}
+.pages{
+    float: left;
+    width: 23%;
+}
+.pages ul{
+    float: left;
+    padding: 0;
+    
+}
+.pages ul li{
+    float: left;
+    list-style: none; 
+}
+.pages ul li a{
+    display: block;
+    margin-right: 35px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    color:#000000; 
+    transition: .33s;
+}
+.pages ul li a:hover{
+    /* adds hover effect to footer links */
+    color: #626262;
+    border-bottom: 1px solid black;
+}
+.pages ul li:last-child a{
+    margin-right: 0;
+}
+
+.social-icons{
+    width: 22%;
+    float: right;    
+}
+.social-icons ul{
+    float:right;
+    padding: 0;
+}
+
+.social-icons li {
+    float: left;
+    list-style: none;
+    color:#000000; 
+    margin: 0 15px; 
+}
+.social icons ul li a {
+display: block;    
+
+}
+.social icons ul li a img{}
+
+.social icons ul li:last child a{
+    margin-right: 0;
+}
+
+/*footer end */
