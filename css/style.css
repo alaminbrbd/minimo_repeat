@@ -11,7 +11,7 @@ body{
 /*header start*/
 header{
     padding: 30px 0;
-    border-bottom: 1px solid; /* adds a bottom border for visual separation */
+    /*border-bottom: 1px solid;*/ /* adds a bottom border for visual separation */
 }
 .container{
     overflow: hidden; /* prevents content overflow */
